@@ -19,4 +19,7 @@ export class ApiService {
   fetchRec(id:number){
     return this.http.get(`https://localhost:7239/api/Stud/${id}`)
   }
+  pushData(data:any){
+    return this.http.post('https://localhost:7239/api/Stud',data);
+  }
 }

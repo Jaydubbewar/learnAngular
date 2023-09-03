@@ -25,6 +25,14 @@
   <button (click)="oneRec(val)" type="button" class="btn btn-success">Get one record</button>
 
 <hr>
+<input type="text" placeholder="Enter ID" #val1>
+<input type="text" placeholder="Enter Name" #val2>
+<input type="text" placeholder="Enter Age" #val3>
+<input type="text" placeholder="Enter phoneNumber" #val4>
+<input type="text" placeholder="Enter courseId" #val5>
+<button (click)="postRec(val1,val2,val3,val4,val5)" type="button" class="btn btn-success">Enter a record</button>
+
+<hr>
 <table class="table table-striped">
   <thead>
     <tr>
