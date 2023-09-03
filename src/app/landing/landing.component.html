@@ -20,8 +20,9 @@
   </nav>
 
   <br>
-  <button type="button" class="btn btn-primary">Get student details</button>
-  <button type="button" class="btn btn-success">Success</button>
+  <button (click)="fetchData()" type="button" class="btn btn-primary">Get student details</button>
+  <input type="text" #val>
+  <button (click)="oneRec(val)" type="button" class="btn btn-success">Get one record</button>
 
 <hr>
 <table class="table table-striped">
@@ -32,6 +33,7 @@
       <th scope="col">Age</th>
       <th scope="col">Phone Number</th>
       <th scope="col">Course Id</th>
+      <th scope="col">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -41,6 +43,7 @@
       <td>{{ item.age }}</td>
       <td>{{ item.phoneNumber }}</td>
       <td>{{ item.courseId }}</td>
+      <td><button (click)="delData(item.id)" type="button" class="btn btn-danger">Delete</button></td>
     </tr>
   </tbody>
 </table>
