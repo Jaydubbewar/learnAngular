@@ -13,7 +13,7 @@ export class LandingComponent {
   age:number=0;
   phoneNum:number=0;
   courseId:string='';
-  dta:any = {name:'sonu',age:24,phoneNumber:1234,courseId:104};
+  dta:any = {name:'sonu',age:24,phoneNumber:1234,courseId:104};//testing
 
   constructor(private apiService: ApiService) {
     // this.data = this.apiService.getData();
