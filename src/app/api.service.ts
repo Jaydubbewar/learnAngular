@@ -22,4 +22,7 @@ export class ApiService {
   pushData(data:any){
     return this.http.post('https://localhost:7239/api/Stud',data);
   }
+  putData(data:any){
+    return this.http.put(`https://localhost:7239/api/Stud/${data.id}`,data)
+  }
 }
